@@ -1,0 +1,16 @@
+<p class="navbar-text float-right">
+<% if user_signed_in? %>
+  Logged in as <strong><%= current_user.email %></strong>.
+  <%= link_to 'Edit profile', edit_user_registration_path %> |
+  <%= link_to "Logout", destroy_user_session_path, method: :delete  %> |
+  <%= link_to 'Roles', roles_path %> |
+  <br>
+  <p> Name:  <%= current_user.user_name %></p>
+  <p> Role:  <%= current_user.role_name %></p>
+  <p> Gender:  <%= current_user.gender %></p>
+  <p> DOB:  <%= current_user.date_of_birth %></p>
+<% else %>
+  <%= link_to "Sign up", new_user_registration_path  %> |
+  <%= link_to "Login", new_user_session_path  %>
+<% end %>
+</p>
