@@ -1,24 +1,28 @@
-# README
+Customer Application:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ Rails: 5.2.4.4
+ Ruby: 2.5.1
 
-Things you may want to cover:
+ Heroku URL: http://customer-omniapp.herokuapp.com/
+ APIS:
 
-* Ruby version
+ 1) http://customer-omniapp.herokuapp.com/api/v1/sign_up
+ params: 
+ user[email]
+ user[password]
+ user[password_confirmation]
+ user[gender] => 'Male' / 'Female'
+ user['phone_number']
+ user['user_name']
+ user['date_of_birth'] => 'mm/dd/yyyy'
 
-* System dependencies
+ 2) http://customer-omniapp.herokuapp.com/api/v1/sign_in
+ params: 
+ user[email]
+ user[password]
 
-* Configuration
+ 3) Roles
+ http://customer-omniapp.herokuapp.com/api/v1/roles
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+ Implemented cancan 
+ 
