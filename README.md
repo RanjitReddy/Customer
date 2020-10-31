@@ -26,3 +26,4 @@ Customer Application:
 
  Implemented cancan 
  
+ Roles(and few sample user accounts) are been seeded via rails db:seed . 
