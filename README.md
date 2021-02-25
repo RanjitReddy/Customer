@@ -1,5 +1,3 @@
-Addddddddddddddddddddddddddddddddddd
-
 Customer Application: *
 
  Rails: 5.2.4.4
